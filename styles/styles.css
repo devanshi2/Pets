@@ -1,0 +1,319 @@
+/**{
+  margin: 0;
+  padding: 0;
+}*/
+body{
+  width:100%;
+  margin:0 auto;
+}
+nav {
+width:100%;
+height:7vh;
+background-color:#ffc75f; 
+padding-bottom: -100px;
+margin-bottom: -100px;
+position: fixed;
+top:0;
+align-items: center;
+z-index:1;
+display: block;
+}
+#logo{
+ width:50px; 
+ display:inline-block;
+ border: 3px ridge #0e49b5;
+ border-radius: 100px;
+ margin: 0.5rem;
+ position: relative;
+ top: 7px;
+}
+.name{
+  display: inline-block;
+  margin-top: 0;
+  padding-top: 0;
+  position: relative;
+  bottom:30px;
+  font-family: 'lucida handwriting';
+}
+.des{
+  padding-left: 5.4rem;
+  margin-top: -5px;
+  position: relative;
+  bottom:50px;
+  font-family: Garamond;
+}
+nav ul {
+float: right;
+position: relative;
+bottom:112px;
+
+}
+nav ul li {
+  list-style-type: none;
+  float:left;
+  margin-bottom: -1em;
+    padding-right: 2em;
+}
+nav ul li a{
+color:#583d72;
+text-decoration: none;
+}
+@keyframes animate1{
+  from{
+    width: 10px;
+  }
+  to{
+    width:400px;
+  }
+}
+hr{
+  animation-name: animate1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-radius: 100px;
+  border:2px solid lightslategray;
+}
+.wrapper{
+  display: flex;
+  height:820px;
+  /*background-color: aliceblue;*/
+}
+.info{
+  margin:85px 20px;
+  padding: 50px;
+  width: 50%;
+  flex-basis: 60%;
+}
+.info h2{
+  text-align: center;
+  font-family: Garamond;
+  font-weight: bolder;
+  text-decoration: underline;
+  color: teal;
+  font-size: 2.5rem;
+  text-shadow:1px 1px turquoise;
+}
+.info p{
+  text-align: center;
+  font-family: 'Times New Roman';
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+form{
+  background-image: linear-gradient(to right,lightblue,azure,lightblue);
+  margin-top: 100px;
+  border:4px groove aliceblue;
+  padding: 10px 50px;
+  justify-content: center;
+  align-items: center;
+}
+label{
+  display: none;
+}
+input{
+  border: 2px solid azure;
+  border-radius: 10px;
+ margin:10px 0px;
+ padding: 5px 20px;
+ width: 35vw;
+ height: 30px;
+}
+textarea{
+  border: 2px solid azure;
+  border-radius: 10px;
+ margin: 20px 40px 2px 0px;
+ padding: 0px;
+ width: 100%;
+ height: 50px;
+ display: inline-block;
+}
+
+#submit{
+  background-color: teal;
+  border:3px solid #000000;
+  color: #000000;
+  margin:20px 110px;
+  padding: 5px;
+  width: 150px;
+  font-weight: bold;
+}
+#submit:hover{
+  background-image: linear-gradient(to right,lightblue,azure,lightblue);
+  color: teal;
+}
+
+hr{
+  margin: 20px auto;
+}
+.follow{
+  font-family: Garamond;
+  margin:85px 20px;
+  padding: 50px;
+  flex-basis: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+.follow h2{
+  color:chocolate;
+  text-shadow: 2px 1px burlywood;
+  font-size: 2.5rem;
+}
+.follow .fa {
+  padding: 15px;
+  width: 20px;
+  height:20px;
+  margin:20px 8px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 100%;
+  background-color: darkgray;
+  color: #ffffff;
+}
+
+#site{
+  margin-left:60px;
+  margin-top:-150px;
+  color:darkgray;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 20px;  
+}
+
+.call{
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  box-sizing: border-box;
+}
+.call h2{
+  text-align: center;
+  padding:30px;
+  font-family: Garamond;
+  font-weight: bolder;
+  text-decoration: underline;
+  color: crimson;
+  font-size: 2.5rem;
+  text-shadow:2px 1px lightsalmon;
+  background-color: ;
+}
+.call .fa-map-marker{
+  padding:10px 300px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.call .fa-phone{
+  padding:10px 350px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.call .fa-envelope{
+  padding:10px 345px;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000000;
+}
+
+footer{
+  text-align: center;
+  background-color:chocolate;
+  width:100%;
+  height:50vh;
+  justify-content: center;
+}
+
+footer ul li{
+  list-style: none;
+  font-size: 1.5rem;
+  color:blanchedalmond;
+  text-align: center;
+}
+
+footer ul li a{
+  color:blanchedalmond;
+  text-decoration: none;
+}
+footer h2{
+  font-size: 2rem;
+  color: bisque;
+  text-align: center;
+  padding: 20px 10px 0 30px;
+  font-family: Garamond;
+}
+.col .fa {
+  padding: 15px;
+  width: 20px;
+  height:20px;
+  margin:0 8px 20px 8px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
+  background-color: darkblue;
+  color: #ffffff;
+}
+footer p{
+  padding-top: 550px;
+  color:burlywood;
+  font-size: 1.5rem;
+}
+.col{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: -20px;
+}
+
+/*@media (min-width:1024px){
+  nav{
+    height:15vh;
+  }
+  .call{
+    height: 60vh;
+  }
+}
+label{
+  display: inline-block;
+}
+#p{
+  display: inline-block;
+  padding-top: 20px;
+  vertical-align:top;
+}
+  textarea{
+    border: 2px solid azure;
+    border-radius: 10px;
+   margin: 20px 20px 2px 0px;
+   padding: 0px;
+   width: 175px;
+   height: 50px;
+   display: inline-block;
+  }
+  .call .fa-map-marker{
+    padding:20px 500px;
+  }
+
+  .call .fa-phone{
+    padding:10px 520px;
+  }
+
+  .call .fa-envelope{
+    padding:10px 510px;
+  }
+  footer{
+    height:60vh;
+  }
+
+  footer p{
+    padding-top: 300px;
+  }
+  .col{
+    width: 30%;
+  }
+  
+}*/
