@@ -6,6 +6,7 @@ body{
   width:100%;
   margin:0 auto;
 }
+
 nav {
 width:100%;
 height:7vh;
@@ -58,6 +59,159 @@ nav ul li a{
 color:#583d72;
 text-decoration: none;
 }
+section{
+  width:100%;
+}
+#dog{
+  width:100%;
+  margin-top: 0px;
+  height:120vh;
+  opacity: 0.7;
+  margin-bottom: -220px;
+}
+#text{
+  position: relative;
+  bottom: 20rem;
+  right:11rem;
+  text-align: center;
+  float: right;
+  font-size: 4vw;
+  color: #0a043c;
+  font-weight: lighter;
+ margin-bottom: 0;
+}
+#quote{
+  font-family: 'Monotype Corsiva';
+}
+#footsteps{
+  width:6vw;
+  padding: 10px 10px 0 20px;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 4.3rem;
+}
+.product{
+  margin:40px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to left,wheat,teal,#583d72,rgba(120,10,67,0.5));
+  width:90%;
+}
+#cat{
+  width:120px;
+  height: 170px;
+  border: 4px groove teal;
+  border-radius: 20px;
+}
+.heading{
+  display: inline-block;
+  position: relative;
+  bottom:110px;
+  left:140px;
+  color:firebrick;
+}
+.para{
+  position: relative;
+  bottom:130px;
+  text-align: justify;
+  left:140px;
+}
+.single{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 110px;
+  margin: 35px;
+  padding: 20px;
+  background-color: thistle;
+  border-radius: 4px;
+}
+.single a{
+  font-size: 1rem;
+  position: relative;
+  bottom:150px;
+  left:250px;
+}
+#pic{
+  width:120px;
+  height:150px;
+}
+
+.item{
+  background-color:snow;
+}
+.items{
+  display: inline-block;
+  margin:10px 35px;
+  /*border:4px ridge black;*/
+  width:300px;
+  height: 150px;
+  background-color: snow;
+}
+.content{
+  display: inline-block;
+  position: relative;
+  bottom: 60px;
+  left:5px;
+  font-style: italic;
+  color:peru;
+  text-shadow: 1px 1px chocolate;
+  line-height: 35px;
+}
+footer{
+  text-align: center;
+  background-color:chocolate;
+  width:100%;
+  height:50vh;
+  justify-content: center;
+}
+
+footer ul li{
+  list-style: none;
+  font-size: 1.5rem;
+  color:blanchedalmond;
+  text-align: center;
+}
+
+footer ul li a{
+  color:blanchedalmond;
+  text-decoration: none;
+}
+footer h2{
+  font-size: 2rem;
+  color: bisque;
+  text-align: center;
+  padding: 20px 10px 0 30px;
+  font-family: Garamond;
+}
+.col .fa {
+  padding: 15px;
+  width: 20px;
+  height:20px;
+  margin:0 8px 20px 8px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
+  background-color: darkblue;
+  color: #ffffff;
+}
+footer p{
+  padding-top: 550px;
+  color:burlywood;
+  font-size: 1.5rem;
+}
+.col{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: -20px;
+}
+
+/*---------Footer CSS-------*/
 @keyframes animate1{
   from{
     width: 10px;
@@ -220,54 +374,7 @@ hr{
   color: #000000;
 }
 
-footer{
-  text-align: center;
-  background-color:chocolate;
-  width:100%;
-  height:50vh;
-  justify-content: center;
-}
-
-footer ul li{
-  list-style: none;
-  font-size: 1.5rem;
-  color:blanchedalmond;
-  text-align: center;
-}
-
-footer ul li a{
-  color:blanchedalmond;
-  text-decoration: none;
-}
-footer h2{
-  font-size: 2rem;
-  color: bisque;
-  text-align: center;
-  padding: 20px 10px 0 30px;
-  font-family: Garamond;
-}
-.col .fa {
-  padding: 15px;
-  width: 20px;
-  height:20px;
-  margin:0 8px 20px 8px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 100%;
-  background-color: darkblue;
-  color: #ffffff;
-}
-footer p{
-  padding-top: 550px;
-  color:burlywood;
-  font-size: 1.5rem;
-}
-.col{
-  width: 100%;
-  height: auto;
-  float: left;
-  margin-top: -20px;
-}
+/*--------------Media Queries for Laptop-------------------*/
 
 @media screen and (min-width:1024px){
   nav{
