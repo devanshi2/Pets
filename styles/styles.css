@@ -269,7 +269,7 @@ footer p{
   margin-top: -20px;
 }
 
-/*@media (min-width:1024px){
+@media screen and (min-width:1024px){
   nav{
     height:15vh;
   }
@@ -316,4 +316,4 @@ label{
     width: 30%;
   }
   
-}*/
+}
