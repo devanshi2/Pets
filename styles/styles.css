@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+
+}
 body{
   width:100%;
   margin:0 auto;
@@ -5,18 +9,17 @@ body{
 
 nav {
 width:100%;
-height:7vh;
+height:90px;
 background-color:#ffc75f; 
-padding-bottom: -100px;
-margin-bottom: -100px;
+/* padding-bottom: -100px;
+margin-bottom: -100px; */
 position: fixed;
 top:0;
-align-items: center;
 z-index:1;
 display: block;
 }
 .checkbtn{
-  font-size:30px;
+  font-size:50px;
   float:right;
   line-height:110px;
   margin-right:40px;
@@ -26,20 +29,20 @@ display: block;
 
 #check{
   display:none;
-}
+} 
 
 #logo{
  width:50px; 
  display:inline-block;
  border: 3px ridge #0e49b5;
  border-radius: 100px;
- margin: 0.5rem;
+ margin: 0.7rem;
  position: relative;
  top: 7px;
 }
 .name{
   display: inline-block;
-  margin-top: 0;
+  margin-top: 10px;
   padding-top: 0;
   position: relative;
   bottom:30px;
@@ -53,143 +56,73 @@ display: block;
   font-family: Garamond;
 }
 
-nav ul{
+/* nav ul{
   position:fixed;
   width:100%;
-  height:100vh;
-  background:brown;
-  top:50px;
+  height:40vh;
+  top:80px;
   left:-150%;
   text-align: center;
   transition:all .5s;
-}
+  background-color: #ffc75f;
+  opacity:0.5;
+}*/
+
 nav ul li{
   display:block;
   list-style-type: none;
-  margin-bottom: 3em;
-    padding-right: 2em;
+  margin-top: 4em;
 }
 nav ul li a{
   font-size:20px;
-  color:white;
+  color:black;
+  font-weight: bolder;
+  text-decoration: none;
 }
 #check:checked ~ul{
   left:0;
-}
+} 
 
-nav ul li a{
-color:#583d72;
-text-decoration: none;
+#check{
+    display: none;
 }
-section{
-  width:100%;
-}
-#dog{
-  width:100%;
-  margin-top: 0px;
-  height:120vh;
-  opacity: 0.7;
-  margin-bottom: -220px;
-}
-#text{
-  position: relative;
-  bottom: 20rem;
-  right:11rem;
-  text-align: center;
-  float: right;
-  font-size: 4vw;
-  color: #0a043c;
-  font-weight: lighter;
- margin-bottom: 0;
-}
-#quote{
-  font-family: 'Monotype Corsiva';
-}
-#footsteps{
-  width:6vw;
-  padding: 10px 10px 0 20px;
-  opacity: 0.8;
-  position: absolute;
-  bottom: 4.3rem;
-}
-.product{
-  margin:40px;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(to left,wheat,teal,#583d72,rgba(120,10,67,0.5));
-  width:90%;
-}
-#cat{
-  width:120px;
-  height: 170px;
-  border: 4px groove teal;
-  border-radius: 20px;
-}
-.heading{
-  display: inline-block;
-  position: relative;
-  bottom:110px;
-  left:140px;
-  color:firebrick;
-}
-.para{
-  position: relative;
-  bottom:130px;
-  text-align: justify;
-  left:140px;
-}
-.single{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  height: 110px;
-  margin: 35px;
-  padding: 20px;
-  background-color: thistle;
-  border-radius: 4px;
-}
-.single a{
-  font-size: 1rem;
-  position: relative;
-  bottom:150px;
-  left:250px;
-}
-#pic{
-  width:120px;
-  height:150px;
-}
+.section{
+    width:100%;
+  }
+  #dog{
+    width:100%; 
+    margin-top: 0px;
+    height:100vh;
+    opacity: 0.7;
+    /* margin-bottom: -220px; */
+  }
 
-.item{
-  background-color:snow;
-}
-.items{
-  display: inline-block;
-  margin:10px 35px;
-  /*border:4px ridge black;*/
-  width:300px;
-  height: 150px;
-  background-color: snow;
-}
-.content{
-  display: inline-block;
-  position: relative;
-  bottom: 60px;
-  left:5px;
-  font-style: italic;
-  color:peru;
-  text-shadow: 1px 1px chocolate;
-  line-height: 35px;
-}
+  #text{
+    position: relative;
+    bottom: 18rem;
+    right:30px;
+    text-align: center;
+    float: right;
+    font-size: 2rem;
+    color: #0a043c;
+    font-weight: lighter;
+   margin-bottom: 0;
+  }
+  #quote{
+    font-family: 'Monotype Corsiva';
+  }
+  #footsteps{
+    width:20vw;
+    padding: 10px 10px 0 10px;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 2.5rem;
+  }
 footer{
   text-align: center;
   background-color:chocolate;
   width:100%;
-  height:50vh;
-  justify-content: center;
+  height:700px;
 }
 
 footer ul li{
@@ -211,9 +144,9 @@ footer h2{
   font-family: Garamond;
 }
 .col .fa {
-  padding: 15px;
-  width: 20px;
-  height:20px;
+  padding: 8px;
+  width: 40px;
+  height:40px;
   margin:0 8px 20px 8px;
   text-align: center;
   text-decoration: none;
@@ -293,7 +226,7 @@ input{
   border-radius: 10px;
  margin:10px 0px;
  padding: 5px 20px;
- width: 35vw;
+ width: 30vw;
  height: 30px;
 }
 textarea{
@@ -338,9 +271,9 @@ hr{
   font-size: 2.5rem;
 }
 .follow .fa {
-  padding: 15px;
-  width: 20px;
-  height:20px;
+  padding: 10px;
+  width: 40px;
+  height:40px;
   margin:20px 8px;
   text-align: center;
   display: inline-block;
@@ -364,7 +297,7 @@ hr{
 .call{
   justify-content: center;
   align-items: center;
-  height: 25vh;
+  height: 23vh;
   box-sizing: border-box;
 }
 .call h2{
@@ -376,7 +309,6 @@ hr{
   color: crimson;
   font-size: 2.5rem;
   text-shadow:2px 1px lightsalmon;
-  background-color: ;
 }
 .call .fa-map-marker{
   padding:10px 300px;
@@ -399,20 +331,128 @@ hr{
 /* --------------Media Queries for Laptop------------------- */
 
 @media screen and (min-width: 1024px){
-  nav{
+   nav{
     height:15vh;
+  } 
+  nav ul{
+    float: right;
+    position: relative;
+    bottom:105px;
+    margin:0.5em;
   }
-  nav ul {
-float: right;
-position: relative;
-bottom:112px;
+  nav ul li {
+     display:inline;
+      margin-bottom: -1em;
+        padding-right: 2em;
+  }
+  nav ul li a{
+    color:#583d72;
+    text-decoration: none;
+    opacity:0.7;
+  }
+  nav ul li a:hover{
+    opacity: 1;
+    font-size:1.5rem;
+  }
+.checkbtn{
+  display:none;
 }
-nav ul li {
-  
-  display:inline;
-  margin-bottom: -1em;
-    padding-right: 2em;
+#check{
+  display: none;
 }
+
+#dog{
+  height:120vh;
+  margin-bottom: -220px;
+}
+#text{
+  bottom: 20rem;
+  right:11rem;
+  font-size: 3.5rem;
+}
+
+#footsteps{
+  width:6vw;
+  padding: 10px 10px 0 20px;
+  position: absolute;
+  bottom: 4.3rem;
+}
+.product{
+  margin:40px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to left,wheat,teal,#583d72,rgba(120,10,67,0.5));
+  width:90%;
+}
+#cat{
+  margin:5px;
+  width:120px;
+  height: 170px;
+  border: 4px groove teal;
+  border-radius: 20px;
+}
+.heading{
+  display: inline-block;
+  position: relative;
+  bottom:100px;
+  left:140px;
+  color:firebrick;
+}
+.para{
+  position: relative;
+  bottom:130px;
+  text-align: justify;
+  left:140px;
+}
+.single{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 125px;
+  margin: 35px;
+  padding: 5px;
+  background-color: thistle;
+  border-radius: 4px;
+}
+.single a{
+  font-size: 1rem;
+  position: relative;
+  bottom:150px;
+  left:250px;
+}
+#pic{
+  width:120px;
+  height:150px;
+}
+
+.item{
+  background-color:snow;
+}
+.items{
+  display: inline-block;
+  margin:10px 35px;
+  /*border:4px ridge black;*/
+  width:300px;
+  height: 150px;
+  background-color: snow;
+}
+.content{
+  display: inline-block;
+  position: relative;
+  bottom: 60px;
+  left:5px;
+  font-style: italic;
+  color:peru;
+  text-shadow: 1px 1px chocolate;
+  line-height: 35px;
+}
+
+/*-------COntact us ---------- */
+
   .call{
     height: 60vh;
   }
